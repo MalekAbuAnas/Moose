@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    /* Colors */
+    --white: #fff;
+    --blue: #03071e;
+    --red: #370617;
+    --black: #090d0e;
+
+
+    /* 3D Button*/
+
+    --btn-color: var(--white);
+
+    --btn-primary-bg: var(--black);
+    --btn-primary-bg-light: #0d1416;
+    --btn-height: 40px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+.home{
+    background: var(--white);
+}
+
+.Button{
+    height: var(--btn-height);
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    min-width: 150px;
+    perspective: 160px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.Button-cube{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform .3s ease-in-out;
+    transform: translateZ(calc(-1 * var(--btn-height) / 2));
+}
+.Button-cube span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: var(--white);
+    background: var(--black);
+    font-weight: 200;
+}
+.Button-cube span:nth-child(1){
+    transform: rotateX(0deg) translateZ(calc(var(--btn-height) / 2));
+}
+.Button-cube span:nth-child(2){
+    transform: rotateX(-90deg) translateZ(calc(var(--btn-height) / 2));
+    background: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+.Button:hover .Button-cube{
+    transform: translateZ(calc(-1 * var(--btn-height) /2)) rotateX(90deg);
+}
+/*
+.Button {
+    height: 40px;
+    width: fit-content;
+    padding: 0 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: var(--white);
+    color: var(--blue);
+    transition: .5s;
+}
+
+.Button:hover {
+    background: none;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+*/
+.Button-Black{
+    height: 40px;
+    width: fit-content;
+    padding: 0 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: var(--black);
+    color: var(--white);
+    transition: .5s;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.Button-Black:hover{
+    background: none;
+    color: var(--black);
+    border: 1px solid var(--black);
+}

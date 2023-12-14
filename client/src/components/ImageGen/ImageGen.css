@@ -1,0 +1,35 @@
+.title{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #370617;
+    font-size: 70px;
+}
+.title span{
+    color: #03071e;
+}
+.default-image{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+    border: 1px solid var(--red);
+}
+.default-image i{
+    color: black;
+    font-size: 200px;
+    margin-top: 120px;
+}
+.img-loading{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.img-loading h1{
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: var(--white);
+}

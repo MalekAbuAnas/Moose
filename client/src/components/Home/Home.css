@@ -1,0 +1,13 @@
+.the-logo{
+    margin-top: 50px;
+}
+.home-title{
+    font-size: 70px;
+    color: var(--black);
+    font-weight: 400;
+    letter-spacing: 60px;
+}
+.text-container p{
+    font-size: 20px;
+    letter-spacing: 10px;
+}
