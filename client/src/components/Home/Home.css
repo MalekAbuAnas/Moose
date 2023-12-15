@@ -7,7 +7,30 @@
     font-weight: 400;
     letter-spacing: 60px;
 }
+.text-container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
 .text-container p{
     font-size: 20px;
     letter-spacing: 10px;
+
+}
+
+@media screen and (max-width: 900px) {
+    .home-title{
+        font-size: 40px;
+        letter-spacing: 20px;
+        margin: 40px 0;
+        font-weight: 500;
+    }
+    .the-logo{
+        width: 300px;
+    }
+    .text-container p{
+        letter-spacing: 5px;
+    }
 }

@@ -26,8 +26,13 @@
 }
 .home{
     background: var(--white);
+    position: relative;
 }
-
+.app{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .Button{
     height: var(--btn-height);
     position: relative;

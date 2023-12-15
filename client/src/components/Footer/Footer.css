@@ -1,0 +1,24 @@
+.footer{
+    height: 100px;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+.footer p a{
+    text-decoration: none;
+    color: var(--black);
+}
+@media screen and (max-width: 900px) {
+    .footer{
+        flex-direction: column;
+        height: fit-content;
+        bottom: 0;
+        left: 0;
+    }
+}

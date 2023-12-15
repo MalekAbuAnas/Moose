@@ -9,26 +9,18 @@ export default function Navbar() {
         <Link className="navbar-brand" to={"/"}>
           Moose
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainmenu"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="mainmenu">
+        <div className="">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link className="nav-link" to={"/create-post"}>
-                <button className="Button Button-primary">
+                {/**<button className="Button Button-primary">
                   <div className="Button-cube">
                     <span>create</span>
                     <span>
                       <i className="fa-solid fa-plus"></i>
                     </span>
                   </div>
-                </button>
+                </button> */}
               </Link>
             </li>
           </ul>
